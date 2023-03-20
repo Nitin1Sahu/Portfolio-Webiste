@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header--text">
+                <h1>Hi, I'm <span>Nitin Sahu</span>.</h1>
+                <p>Web Developer and Software Engineer</p>
+                <h5>Upcoming Intern at Microsoft & Upcoming SDE at Google</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus dolore repellat illo dicta
+                        perferendis in veniam quidem quam consequatur, neque ea odit asperiores voluptatum itaque.
+                        Facere laboriosam eius expedita quibusdam!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span>
+                                < br />Web App Development
+                            </li>
+                            <li><span>App Development</span><br />Android/IOS development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - Current</span><br />Advance Diploma in Computer Enginerring at IICS</li>
+                            <li><span>2021 - Current</span><br />Bachlor in Computer Applicatoin at IGNOU</li>
+                            <li><span>2018 - 2020</span><br />10 + 2 from CBSE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------Services ----- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="icon fa-solid fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi deserunt repudiandae soluta
+                        exercitationem? Nobis, sed!</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="icon fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Designing</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi deserunt repudiandae soluta
+                        exercitationem? Nobis, sed!</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="icon fa-brands fa-app-store-ios"></i>
+                    <h2>App Developing</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi deserunt repudiandae soluta
+                        exercitationem? Nobis, sed!</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Demo Website</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, adipisci!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Demo Website</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, adipisci!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.webp" alt="">
+                    <div class="layer">
+                        <h3>Demo Website</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, adipisci!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -----Contact -----  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> sah*********@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 93*******5</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/nitin-sahu-67851522b/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/nitinNsahu"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/unstoppablegeeknitin/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="#" class="btn btn-2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Nitin 2023</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        let tabLinks = document.getElementsByClassName("tab-links");
+        let tabContents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove("active-link");
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+
+        let sideMenu = document.getElementById('sideMenu');
+        function openMenu() {
+            sideMenu.style.right = '0';
+        }
+        function closeMenu() {
+            sideMenu.style.right = '-200px';
+        }
+        const msg = document.getElementById("msg");
+
+    </script>
+</body>
+
+</html>
